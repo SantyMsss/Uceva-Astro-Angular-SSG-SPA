@@ -57,6 +57,9 @@ export class App {
       size: 2
     },
     navLinks: [
+      { text: 'Home', url: '/home' },
+      { text: 'About', url: '/about' },
+      { text: 'Contact', url: '/contact' },
       { text: 'Usuarios', url: '/users' },
       { text: 'Productos', url: '/products' },
       { text: 'Fecha', url: '/date' },

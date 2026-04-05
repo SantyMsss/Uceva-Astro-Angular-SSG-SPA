@@ -2,6 +2,9 @@ import { Routes } from '@angular/router';
 import { DatePage } from './pages/date/date.page';
 import { ProductsPage } from './pages/products/products.page';
 import { UsersPage } from './pages/users/users.page';
+import { HomePage } from './pages/home/home.page';
+import { AboutPage } from './pages/about/about.page';
+import { ContactPage } from './pages/contact/contact.page';
 
 /**
  * Definición de las rutas principales de la aplicación.
@@ -19,6 +22,10 @@ import { UsersPage } from './pages/users/users.page';
  * @see {@link ProductsPage}
  */
 export const routes: Routes = [
+
+  { path: 'home', component: HomePage },
+  { path: 'about', component: AboutPage },
+  { path: 'contact', component: ContactPage },
 
   /**
    * Ruta de usuarios.
@@ -52,7 +59,7 @@ export const routes: Routes = [
    *
    * @remarks
    * Captura cualquier ruta no definida y redirige
-   * automáticamente a la ruta de usuarios.
+   * automáticamente a la ruta principal.
    */
-  { path: '**', redirectTo: 'users' },
+  { path: '**', redirectTo: 'home' },
 ];
