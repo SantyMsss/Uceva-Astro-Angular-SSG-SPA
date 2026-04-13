@@ -1,5 +1,12 @@
 import { User } from "../interfaces/users.interface";
 
+/**
+ * Mock de usuarios para pruebas unitarias.
+ *
+ * @remarks
+ * Contiene un conjunto de datos ficticios de tipo `User`
+ * utilizados para simular respuestas del servicio en tests.
+ */
 export const USERS_MOCK: User[] = [
     {
         id: 1,

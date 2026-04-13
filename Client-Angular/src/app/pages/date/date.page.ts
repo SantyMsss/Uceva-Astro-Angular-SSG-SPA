@@ -1,6 +1,13 @@
 import { Component } from '@angular/core';
 import { BadgeAtom } from '@brejcha13320/design-system-bootstrap';
 
+/**
+ * Página de la fecha actual del sistema.
+ *
+ * @remarks
+ * Renderiza la fecha obtenida en tiempo real
+ * en el momento en que se instancia el componente.
+ */
 @Component({
   selector: 'app-date.page',
   imports: [BadgeAtom],
